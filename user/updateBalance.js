@@ -14,7 +14,7 @@ const UpdateBal = async (amount, name) => {
       }
 
       const bal = row.balance;
-      const fee = amount * 1 / 100;
+      const fee = amount * 1.2 / 100;
       const newAmount = amount - fee;
       const newBal = newAmount + bal;
 
