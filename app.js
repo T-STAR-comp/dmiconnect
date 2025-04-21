@@ -72,8 +72,8 @@ app.use('/Api/get/user/details/main/server',FetchUserDetails);
 app.use('/Api/initiate/user/payout/main/server',payout);
 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+app.get('/', (req, res) => {
+  res.status(200).send({msg:'LIVE'});
 });
 
 
