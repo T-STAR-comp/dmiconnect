@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
   const generateChargeId = () => `PC-${uuidv4()}`;
   const TNM_MPAMBA = '27494cb5-ba9e-437f-a114-4e7a7686bcca';
   const AIRTEL_MONEY = '20be6c20-adeb-4b5b-a7ba-0769820df4fb';
-  const secretKey = process.env.TEST_SEC_KEY;
+  const secretKey = process.env.LIVE_SEC_KEY;
 
   const data = {
     mobile_money_operator_ref_id: operator === 'TNM' ? TNM_MPAMBA : AIRTEL_MONEY,

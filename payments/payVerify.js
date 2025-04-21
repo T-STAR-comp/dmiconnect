@@ -10,7 +10,7 @@ const Balance = require('../user/updateBalance');
 
 router.post('/', async (req,res)=>{
     const fetch = (await import('node-fetch')).default;
-    const secretKey = process.env.TEST_SEC_KEY; //process.env.LIVE_SEC_KEY; 
+    const secretKey = process.env.LIVE_SEC_KEY; //process.env.LIVE_SEC_KEY; 
     const {trans_ID,name} = req.body;
 
     try{

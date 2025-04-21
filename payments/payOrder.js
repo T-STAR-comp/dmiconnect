@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
         return res.status(500).json({ error: "Failed to import fetch module" });
     }
 
-    const secretKey = process.env.TEST_SEC_KEY;
+    const secretKey = process.env.LIVE_SEC_KEY;
     const paychanguURL = process.env.PAYCHANGU_URL;
     const randomTxRef = Math.floor(Math.random() * 1000000000) + 1;
 
